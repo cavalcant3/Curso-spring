@@ -1,25 +1,14 @@
-version: '3'
-
+version: '3.1'
 services:
-  mysqlsrv:
-    image: mysql:5.7
+  db:
+    image: mysql
+    container_name: mysql
     environment:
-      MYSQL_ROOT_PASSWORD: "MySql2019!"
-      MYSQL_DATABASE: "testedb"
+      MYSQL_ROOT_PASSWORD: root
     ports:
-      - "3306:3306"
+      - "3309:3309"
     volumes:
-      - /home/renatogroffe/Desenvolvimento/Docker/Volumes/MySql:/var/lib/mysql
-    networks:
-      - mysql-compose-network
+      - devdojo_data:/var/lib/mysql
 
-  adminer:
-    image: adminer
-    ports:
-      - "3306:3306"
-    networks:
-      - mysql-compose-network
-
-networks:
-  mysql-compose-network:
-    driver: bridge
+volumes:
+  devdojo_data:
