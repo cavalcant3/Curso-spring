@@ -1,10 +1,10 @@
-package academy.devdojo.springboot2;
+package academy.devdojo.springboot2.domain;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
 @SpringBootTest
-class Springboot2EssentialsApplicationTests {
+class DemoApplicationTests {
 
 	@Test
 	void contextLoads() {
