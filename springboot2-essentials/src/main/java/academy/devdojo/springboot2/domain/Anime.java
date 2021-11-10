@@ -5,6 +5,8 @@ import lombok.Data;
 
 @Data
 @AllArgsConstructor
+
+//representa o que tem no bd
 public class Anime {
     private Long id;
     private String name;
