@@ -11,6 +11,7 @@ import javax.persistence.Id;
 @AllArgsConstructor
 @NoArgsConstructor
 @Entity
+@Builder
 //representa o que tem no bd
 public class Anime {
     @Id
